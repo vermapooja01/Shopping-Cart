@@ -58,6 +58,7 @@ switch($_GET["action"]) {
 <h1 style="text-align:center;"> Welcome to Shopping Website </h1>
 <div id="shopping-cart">
 <div class="txt-heading">Your Cart <button type="button" class="btn btn-default" style="float:right; border-radius:4px; padding:1px 10px;"><a href="index.php?action=empty">Empty Your Cart</a></button></div>
+<input type="button" value="Continue Shopping" onclick="window.location='products.php'" />
 <?php
 if(isset($_SESSION["cart_item"])){
     $item_total = 0;
