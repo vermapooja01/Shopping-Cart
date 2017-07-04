@@ -57,8 +57,8 @@ switch($_GET["action"]) {
 <div class="col-md-12">
 <h1 style="text-align:center;"> Welcome to Shopping Website </h1>
 <div id="shopping-cart">
-<div class="txt-heading">Your Cart <button type="button" class="btn btn-default" style="float:right; border-radius:4px; padding:1px 10px;"><a href="index.php?action=empty">Empty Your Cart</a></button></div>
-<input type="button" value="Continue Shopping" onclick="window.location='products.php'" />
+<div class="txt-heading">Your Shopping Cart <button type="button" class="btn btn-default" style="float:right; border-radius:4px; padding:1px 10px;"><a href="index.php?action=empty">Empty Your Cart</a></button></div>
+
 <?php
 if(isset($_SESSION["cart_item"])){
     $item_total = 0;
@@ -88,15 +88,22 @@ if(isset($_SESSION["cart_item"])){
 		?>
 
 <tr>
-<td colspan="5" align=center><strong>Total:</strong> <?php echo "$".$item_total; ?></td>
+<td colspan="5" align=center><strong>Total:</strong> <?php echo "$".$item_total; ?></td><td colspan="5" align="right"><input t<input type="button" value="Place Order" onclick="window.location='billing.php'"></td>
+
+
 </tr>
+
 </tbody>
-</table>		
+</table>	
+<input type="button" value="Continue Shopping" onclick="window.location='index.php'" />	
   <?php
 }
 ?>
 </div>
-
+<form name="form1">
+	<input type="hidden" name="productid" />
+    <input type="hidden" name="command" />
+</form>
 <div id="product-grid">
 	<div class="txt-heading">Products</div>
 	<?php
@@ -109,7 +116,7 @@ if(isset($_SESSION["cart_item"])){
 			<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"></div>
 			<div><strong><?php echo $product_array[$key]["name"]; ?></strong></div>
 			<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
-			<div><input type="text" name="quantity" value="1" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div>
+			<div><input type="text" name="quantity" value="0" size="2" /><input type="submit" value="Add to cart" class="btnAddAction" /></div>
 			</form>
 		</div>
 	<?php
