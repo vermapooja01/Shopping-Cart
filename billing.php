@@ -1,7 +1,7 @@
 <?php
-	include("db.php");
-	
-	
+	include("includes/db.php");
+	include("includes/functions.php");
+	error_reporting(E_ALL ^ E_NOTICE);
 	if($_REQUEST['command']=='update'){
 		$name=$_REQUEST['name'];
 		$email=$_REQUEST['email'];
@@ -48,10 +48,11 @@
 <form name="form1" onsubmit="return validate()">
     <input type="hidden" name="command" />
 	<div align="center">
-        <h1 align="center">Billing Info</h1>
+        <h1 align="center" style="background-color:#f08080;">Your Billing Information</h1>
         <table border="0" cellpadding="2px">
-        	<tr><td>Order Total:</td><td></td></tr>
-            <tr><td>Your Name:</td><td><input type="text" name="name" /></td></tr>
+        	<tr><td><strong>Order Total:</strong></td><td><strong><?php echo "$", get_order_total()?></strong></td></tr>
+			<tr><td><h4>Fill in your shipping details</h4></td></tr>
+			<tr><td>Your Name:</td><td><input type="text" name="name" /></td></tr>
             <tr><td>Address:</td><td><input type="text" name="address" /></td></tr>
             <tr><td>Email:</td><td><input type="text" name="email" /></td></tr>
             <tr><td>Phone:</td><td><input type="text" name="phone" /></td></tr>
