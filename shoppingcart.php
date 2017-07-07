@@ -83,7 +83,7 @@
             <?php					
 				}
 			?>
-				<tr><td><b>Order Total: $<?php echo get_order_total()?></b></td><td colspan="5" align="right"><input type="button" value="Clear Cart" onclick="clear_cart()"><input type="button" value="Update Cart" onclick="update_cart()"><input type="button" value="Place Order" onclick="window.location='billing.php'"></td></tr>
+				<tr><td><b>Order Total: $<?php echo get_order_total()?></b></td><td colspan="5" align="right"><input type="button" value="Empty Cart" onclick="clear_cart()"><input type="button" value="Update Cart" onclick="update_cart()"><input type="button" value="Place Order" onclick="window.location='billing.php'"></td></tr>
 			<?php
             }
 			else{
