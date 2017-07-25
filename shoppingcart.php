@@ -184,8 +184,8 @@ body {margin:0;}
 	color: #999;
 	background-color: #111110;">
     
-	       <a style="color: #fff;font-weight: normal;" href="subpage.html">Home</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Search</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Books</a> | <a style="color: #fff;font-weight: normal;" href="#">New Releases</a> | <a style="color: #fff;font-weight: normal;" href="#">FAQs</a> | <a style="color: #fff;font-weight: normal;" href="#">Contact Us</a><br />
-        Copyright 2013 <a style="color: #fff;font-weight: normal;" href="#"><strong>Your Company Name</strong></a> | <a style="color: #fff;font-weight: normal;" href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a style="color: #fff;font-weight: normal;" href="http://www.templatemo.com" target="_parent" title="free css templates">Free CSS Templates</a>	</div> 
+	       <a style="color: #fff;font-weight: normal;" href="index.php">Home</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Search</a> | <a style="color: #fff;font-weight: normal;" href="products.php">Products</a> | <a style="color: #fff;font-weight: normal;" href="#">New Products</a> | <a style="color: #fff;font-weight: normal;" href="#">FAQs</a> | <a style="color: #fff;font-weight: normal;" href="#">Contact Us</a><br />
+        Copyright &#169; 2017 <a style="color: #fff;font-weight: normal;" href="#"><strong>Shopping Website</strong></a> </div> 
     <!-- end of footer -->
 </body>
 </html>
