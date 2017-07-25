@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,32 +60,49 @@ body {margin:0;}
 </head>
 <body>
 
-<div class="topnav" id="myTopnav">
-  <strong><a href="index.php">Home</a></strong>
-  <strong><a href="products.php">Products</a></strong>
-  <strong><a href="shoppingcart.php">Cart</a></strong>
-  <strong><a href="#news">News</a></strong>
-  <strong><a href="#contact">Contact</a></strong>
-  <strong><a href="#about">About</a></strong>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
-<div style="padding-left:16px">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Shopping Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="products.php">Products <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="products.php">Products 1-1</a></li>
+          <li><a href="products.php">Products 1-2</a></li>
+          <li><a href="products.php">Products 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="shoppingcart.php">Cart</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
   
+<div class="container">
+  <h3>Welcome!!!</h3>
+  <p></p>
 </div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-<img src="images/main1.jpg" class="img-fluid" alt="responsive image" style="width:1100px;height:600px;">
 
+
+
+<!--<img src="images/main1.jpg" class="img-fluid" alt="responsive image" style="width:1100px;height:600px;"> -->
+<div id="templatemo_footer" style="clear: both;
+	width: 1200px;
+	padding: 20px 0px 20px 0;
+	text-align: center;
+	border-top: 1px solid #25211e;
+	color: #999;
+	background-color: #111110;">
+    
+	       <a style="color: #fff;font-weight: normal;" href="index.php">Home</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Search</a> | <a style="color: #fff;font-weight: normal;" href="products.php">Products</a> | <a style="color: #fff;font-weight: normal;" href="#">New Products</a> | <a style="color: #fff;font-weight: normal;" href="#">FAQs</a> | <a style="color: #fff;font-weight: normal;" href="#">Contact Us</a><br />
+        Copyright &#169; 2017 <a style="color: #fff;font-weight: normal;" href="#"><strong>Shopping Website</strong></a> </div> 
+    <!-- end of footer -->
 </body>
 </html>
 

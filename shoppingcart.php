@@ -84,31 +84,28 @@ body {margin:0;}
 </head>
 <body>
 
-<div class="topnav" id="myTopnav">
-  <strong><a href="index.php">Home</a></strong>
-  <strong><a href="products.php">Products</a></strong>
-  <strong><a href="shoppingcart.php">Cart</a></strong>
-  <strong><a href="#news">News</a></strong>
-  <strong><a href="#contact">Contact</a></strong>
-  <strong><a href="#about">About</a></strong>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
-<div style="padding-left:16px">
-  
-</div>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Shopping Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="products.php">Products <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="products.php">Products 1-1</a></li>
+          <li><a href="products.php">Products 1-2</a></li>
+          <li><a href="products.php">Products 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="shoppingcart.php">Cart</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -145,7 +142,7 @@ function myFunction() {
 <input type="hidden" name="command" />
 	<div style="margin:0px auto; width:600px;" >
     <div style="padding-bottom:10px">
-    	<h1 align="center" style="background-color:#f08080;">Your Shopping Cart</h1>
+    	<h1 align="center" >Your Shopping Cart</h1>
     <input type="button" class="btn btn-success" value="Continue Shopping" onclick="window.location='products.php'" />
     </div>
     	<div style="color:#F00"><?php echo $msg?></div>
@@ -178,5 +175,17 @@ function myFunction() {
         </table>
     </div>
 </form>
+
+<div id="templatemo_footer" style="clear: both;
+	width: 1200px;
+	padding: 20px 0px 20px 0;
+	text-align: center;
+	border-top: 1px solid #25211e;
+	color: #999;
+	background-color: #111110;">
+    
+	       <a style="color: #fff;font-weight: normal;" href="subpage.html">Home</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Search</a> | <a style="color: #fff;font-weight: normal;" href="subpage.html">Books</a> | <a style="color: #fff;font-weight: normal;" href="#">New Releases</a> | <a style="color: #fff;font-weight: normal;" href="#">FAQs</a> | <a style="color: #fff;font-weight: normal;" href="#">Contact Us</a><br />
+        Copyright 2013 <a style="color: #fff;font-weight: normal;" href="#"><strong>Your Company Name</strong></a> | <a style="color: #fff;font-weight: normal;" href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a style="color: #fff;font-weight: normal;" href="http://www.templatemo.com" target="_parent" title="free css templates">Free CSS Templates</a>	</div> 
+    <!-- end of footer -->
 </body>
 </html>
