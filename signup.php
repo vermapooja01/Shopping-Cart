@@ -78,14 +78,14 @@ body {margin:0;}
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
   
 <div class="container">
   <h3 align="center">New User Registration</h3>
-  <table class="table table-responsive" border="0" cellpadding="4px">
+  <table class="table table-responsive" border="0" cellpadding="20px">
         	
 			
 			<tr><td><strong>First Name:</strong></td><td><input type="text" name="firstname" /></td></tr>

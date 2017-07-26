@@ -66,7 +66,7 @@ body {margin:0;}
       <a class="navbar-brand" href="#">Shopping Website</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="index.php">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="products.php">Products <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="products.php">Products 1-1</a></li>
@@ -84,7 +84,17 @@ body {margin:0;}
 </nav>
   
 <div class="container">
-  <h3>Welcome!!!</h3>
+  <h3 align="center">Please Login</h3>
+  <table class="table table-responsive" border="0" cellpadding="20px">
+        	
+			
+			
+			<tr><td><strong>Username:</strong></td><td><input type="text" name="username" /></td></tr>
+			<tr><td><strong>Password:</strong></td><td><input type="password" name="password" /></td></tr>
+			
+            
+            <tr><td>&nbsp;</td><td><input type="submit" class="btn btn-success" value="Login" /></td></tr>
+        </table>
   <p></p>
 </div>
 
