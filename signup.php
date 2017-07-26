@@ -84,7 +84,23 @@ body {margin:0;}
 </nav>
   
 <div class="container">
-  <h3>Welcome!!!</h3>
+  <h3 align="center">New User Registration</h3>
+  <table class="table table-responsive" border="0" cellpadding="4px">
+        	
+			
+			<tr><td><strong>First Name:</strong></td><td><input type="text" name="firstname" /></td></tr>
+			<tr><td><strong>Last Name:</strong></td><td><input type="text" name="lastname" /></td></tr>
+            <tr><td><strong>Address:</strong></td><td><input type="text" name="address" /></td></tr>
+			<tr><td><strong>Date of Birth:</strong></td><td><input type="text" name="dob" /></td></tr>
+			<tr><td><strong>Phone:</strong></td><td><input type="text" name="phone" /></td></tr>
+            <tr><td><strong>Email:</strong></td><td><input type="text" name="email" /></td></tr>
+			<tr><td><strong>Confirm Email:</strong></td><td><input type="text" name="email" /></td></tr>
+			<tr><td><strong>Username:</strong></td><td><input type="text" name="username" /></td></tr>
+			<tr><td><strong>Password:</strong></td><td><input type="password" name="password" /></td></tr>
+			<tr><td><strong>Confirm Password:</strong></td><td><input type="password" name="password" /></td></tr>
+            
+            <tr><td>&nbsp;</td><td><input type="submit" class="btn btn-success" value="Submit" /></td></tr>
+        </table>
   <p></p>
 </div>
 
