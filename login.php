@@ -107,6 +107,7 @@ body {margin:0;}
 	padding: 20px 0px 20px 0;
 	text-align: center;
 	border-top: 1px solid #25211e;
+	margin-top:300px;
 	color: #999;
 	background-color: #111110;">
     

@@ -66,7 +66,7 @@ body {margin:0;}
       <a class="navbar-brand" href="#">Shopping Website</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="index.php">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="products.php">Products <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="products.php">Products 1-1</a></li>
@@ -85,22 +85,24 @@ body {margin:0;}
   
 <div class="container">
   <h3 align="center">New User Registration</h3>
+  <form action="registration.php" method="POST">
+  
   <table class="table table-responsive" border="0" cellpadding="20px">
-        	
-			
-			<tr><td><strong>First Name:</strong></td><td><input type="text" name="firstname" /></td></tr>
-			<tr><td><strong>Last Name:</strong></td><td><input type="text" name="lastname" /></td></tr>
-            <tr><td><strong>Address:</strong></td><td><input type="text" name="address" /></td></tr>
-			<tr><td><strong>Date of Birth:</strong></td><td><input type="text" name="dob" /></td></tr>
-			<tr><td><strong>Phone:</strong></td><td><input type="text" name="phone" /></td></tr>
-            <tr><td><strong>Email:</strong></td><td><input type="text" name="email" /></td></tr>
-			<tr><td><strong>Confirm Email:</strong></td><td><input type="text" name="email" /></td></tr>
-			<tr><td><strong>Username:</strong></td><td><input type="text" name="username" /></td></tr>
-			<tr><td><strong>Password:</strong></td><td><input type="password" name="password" /></td></tr>
-			<tr><td><strong>Confirm Password:</strong></td><td><input type="password" name="password" /></td></tr>
-            
+			<tr><td><strong>First Name:</strong></td><td><input type="text" name="firstname" placeholder="First Name" /></td></tr>
+			<tr><td><strong>Last Name:</strong></td><td><input type="text" name="lastname" placeholder="Last Name" /></td></tr>
+            <tr><td><strong>Address:</strong></td><td><input type="text" name="address" placeholder="Address" /></td></tr>
+			<tr><td><strong>Date of Birth:</strong></td><td><input type="text" name="dob" placeholder="Date of Birth" /></td></tr>
+			<tr><td><strong>Phone:</strong></td><td><input type="text" name="phone" placeholder="Phone" /></td></tr>
+            <tr><td><strong>Email:</strong></td><td><input type="text" name="email1" placeholder="Email"/></td></tr>
+			<tr><td><strong>Confirm Email:</strong></td><td><input type="text" name="email2" placeholder="Confirm Email" /></td></tr>
+			<tr><td><strong>Username:</strong></td><td><input type="text" name="username" placeholder="Username" /></td></tr>
+			<tr><td><strong>Password:</strong></td><td><input type="password" name="password1" placeholder="Password" /></td></tr>
+			<tr><td><strong>Confirm Password:</strong></td><td><input type="password" name="password2" placeholder="Confirm Password" /></td></tr>
             <tr><td>&nbsp;</td><td><input type="submit" class="btn btn-success" value="Submit" /></td></tr>
+			
         </table>
+		
+		</form>
   <p></p>
 </div>
 
