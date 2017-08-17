@@ -1,12 +1,6 @@
 <?php
 	include("includes/db.php");
-	
-	
 
-
-  
-
-  
   
   $firstname = $_POST['firstname'];
   $lastname = $_POST['lastname'];
